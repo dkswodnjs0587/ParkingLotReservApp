@@ -14,11 +14,11 @@ if (localPropertiesFile.exists()) {
 val firebaseCredentials: String = localProperties.getProperty("firebase.credentials") ?: ""
 
 android {
-    namespace = "com.example.forcontest"
+    namespace = "com.KimAnHwang.ParkingLotReservApp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.forcontest"
+        applicationId = "com.KimAnHwang.ParkingLotReservApp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

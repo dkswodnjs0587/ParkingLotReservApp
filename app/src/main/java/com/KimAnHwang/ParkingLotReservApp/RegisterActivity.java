@@ -1,4 +1,4 @@
-package com.example.forcontest;
+package com.KimAnHwang.ParkingLotReservApp;
 
 
 import android.content.Intent;
