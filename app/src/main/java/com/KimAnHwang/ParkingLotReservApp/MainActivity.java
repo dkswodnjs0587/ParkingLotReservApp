@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth auth;
     private Button loginLogoutButton;
+    Button buttonMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
+        });
+
+        buttonMap = findViewById(R.id.buttonMap);
+        buttonMap.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
         });
     }
 
