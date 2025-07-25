@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private Button loginLogoutButton;
     Button buttonMap;
+    Button naverMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
         buttonMap = findViewById(R.id.buttonMap);
         buttonMap.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(intent);
+        });
+
+        naverMap = findViewById(R.id.naverMap);
+        naverMap.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, NaverMapActivity.class);
             startActivity(intent);
         });
     }

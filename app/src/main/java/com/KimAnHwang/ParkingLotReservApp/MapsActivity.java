@@ -112,11 +112,4 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             }
         }
     }
-
-    // ✅ 상단 ← 버튼 눌렀을 때 메인으로 복귀
-    /*@Override
-    public boolean onSupportNavigateUp() {
-        finish();
-        return true;
-    }*/
 }

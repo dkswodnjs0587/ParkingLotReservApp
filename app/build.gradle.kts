@@ -28,6 +28,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField("String", "FIREBASE_CREDENTIALS", "\"$firebaseCredentials\"")
+        manifestPlaceholders["NaverClientKey"] = localProperties.getProperty("NaverClientKey") ?: ""
+        manifestPlaceholders["GoogleMapApiKey"] = localProperties.getProperty("GoogleMapApiKey") ?: ""
     }
 
     buildTypes {
@@ -53,6 +55,7 @@ android {
 
 dependencies {
 
+    implementation("com.naver.maps:map-sdk:3.22.0")
     implementation("com.google.android.gms:play-services-maps:18.0.2")
     implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation(libs.appcompat)
